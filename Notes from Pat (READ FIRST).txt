@@ -14,6 +14,7 @@ Configuring the code:
   - Look for: "let mailOptions = {"
     - from: (change to whatever you want the user to see as the "from" address)
     - to: (set to the destination email -- this is the company employee who will handle the incoming form data)
+- In addition, if you use the index.html file in this project for the front end, you'll need to adjust the "serverUrl" pointer in main.js
 
 Notes: 
 - You do NOT make an account with Nodemailer
