@@ -1,0 +1,22 @@
+These steps will help you configure and run this mail server. 
+
+- Copy all this code into a project folder in VS Code and/or a repository on GitHub, and connect it to render.com 
+- Node setup:
+  - Do NOT type npm init -y (already have a package.json)
+  - Instead, type "npm install" (this will install the dependencies listed in package.json, including nodemailer)
+- When ready (see below first!) type "node server.js" (to start it up)
+
+Configuring the code: 
+- Nodemailer credentials: 
+  - In the sendMail function in server.js: 
+    - Under "auth:" set "user:" and "pass:" (this is where your gmail email address and password go) 
+- Destination Email: 
+  - Look for: "let mailOptions = {"
+    - from: (whatever)
+    - to: (destination email)
+
+Notes: 
+- You do NOT make an account with Nodemailer
+- Nodemailer just uses an existing mail service (your account) 
+- This project is set up to use a gmail account
+- This requires you to put your password in the server.js code. This is why you want to make a new gmail account for this, because you'll be putting your email address and password into a public repository on GitHub! 
