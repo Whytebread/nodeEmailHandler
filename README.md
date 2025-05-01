@@ -1,6 +1,8 @@
 ![image](https://github.com/PatrickFrankAIU/GradeManagerProject/assets/134087916/b5d814bf-e38f-456f-8f9c-cb5a98fb52fa)
 
 This code is NOT configured for deployment (read the file "Notes from Pat (READ FIRST).txt", but if you want to see what the HTML page looks like when deployed, it's hosted on Pages here: 
+https://patrickfrankaiu.github.io/nodeEmailHandler/
+
 
 # Email Form Demo
 
