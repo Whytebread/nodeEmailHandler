@@ -20,7 +20,9 @@ Notes:
 - You do NOT make an account with Nodemailer
 - Nodemailer just uses an existing mail service (your account) 
 - This project is set up to use a gmail account
-- This requires you to put your password in the server.js code. This is why you want to make a new gmail account for this, because you'll be putting your email address and password into a public repository on GitHub! 
+- This requires you to put your password in the server.js code. This is why you want 
+  to make a new gmail account for this, because you'll be putting your email address 
+  and password into a public repository on GitHub! 
 
 
 
