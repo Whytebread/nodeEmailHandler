@@ -20,3 +20,39 @@ Notes:
 - Nodemailer just uses an existing mail service (your account) 
 - This project is set up to use a gmail account
 - This requires you to put your password in the server.js code. This is why you want to make a new gmail account for this, because you'll be putting your email address and password into a public repository on GitHub! 
+
+
+
+Alternative code for Zoho Mail: 
+
+
+function sendEmail(formData, callback) {
+  // Create a transporter object for Zoho Mail
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.zoho.com',
+    port: 465,
+    secure: true, // use SSL
+    auth: {
+      user: 'your-email@yourdomain.com', // Your Zoho email address
+      pass: 'your-zoho-password'         // Your Zoho password
+    }
+  });
+  
+  // Construct email content
+  let emailContent = 'New Form Submission:\n\n';
+  for (let key in formData) {
+    emailContent += key + ': ' + formData[key] + '\n';
+  }
+  
+  // Setup email data
+  let mailOptions = {
+    from: 'your-email@yourdomain.com',     // Your Zoho email (same as above)
+    to: 'recipient-email@example.com',     // Where to send form submissions
+    subject: 'New Form Submission',
+    text: emailContent
+  };
+  
+  // Send mail with defined transport object
+  transporter.sendMail(mailOptions, callback);
+}
+
