@@ -12,8 +12,8 @@ Configuring the code:
     - Under "auth:" set "user:" and "pass:" (this is where your gmail email address and password go) 
 - Destination Email: 
   - Look for: "let mailOptions = {"
-    - from: (whatever)
-    - to: (destination email)
+    - from: (change to whatever you want the user to see as the "from" address)
+    - to: (set to the destination email -- this is the company employee who will handle the incoming form data)
 
 Notes: 
 - You do NOT make an account with Nodemailer
