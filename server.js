@@ -119,7 +119,7 @@ function sendEmail(formData, callback) {
   // Setup email data
   let mailOptions = {
     from: 'whytebread@zohomail.com',          // Sender address
-    to: 'recipient-email@example.com',      // List of recipients
+    to: 'whytebread@zohomail.com',      // List of recipients
     subject: 'New Form Submission',         // Subject line
     text: emailContent                      // Plain text body
   };
