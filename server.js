@@ -99,12 +99,14 @@ const server = http.createServer((req, res) => {
 
 // Function to send email using nodemailer
 function sendEmail(formData, callback) {
-  // Create a transporter object
+  // Create a transporter object for Zoho Mail
   let transporter = nodemailer.createTransport({
-    service: 'gmail',  // You can change this to another email service
+    host: 'smtp.zoho.com',
+    port: 465,
+    secure: true, // use SSL
     auth: {
-      user: 'your-email@gmail.com',  // Your email address
-      pass: 'your-app-password'      // Your email password or App Password
+      user: 'whytebread@zohomail.com', // Your Zoho email address
+      pass: 'n)xLf,_2tL$"^Qt'         // Your Zoho password
     }
   });
   
@@ -116,7 +118,7 @@ function sendEmail(formData, callback) {
   
   // Setup email data
   let mailOptions = {
-    from: 'your-email@gmail.com',          // Sender address
+    from: 'whytebread@zohomail.com',          // Sender address
     to: 'recipient-email@example.com',      // List of recipients
     subject: 'New Form Submission',         // Subject line
     text: emailContent                      // Plain text body
