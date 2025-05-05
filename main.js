@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to send form data to the server
 function sendFormData(formData) {
     // Define the server URL
-    let serverUrl = 'http://localhost:3000/submit-form'; 
-    // let serverUrl = 'https://your-app-name.onrender.com/submit-form'; // adjust with your app name
+    // let serverUrl = 'http://localhost:3000/submit-form'; 
+    let serverUrl = 'https://nodeemailhandler.onrender.com/submit-form'; // adjust with your app name
     
     // Create fetch options
     let fetchOptions = {
